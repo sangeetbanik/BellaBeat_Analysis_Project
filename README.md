@@ -43,6 +43,15 @@ The basis for this analysis is **12-03-2016 to 12-05-2016** data and the steps f
 * The "Id" column indicates the number of unique users represented in the dataset. There were 24 unique users who provided data for their 'daily_sleep' health metrics, 8 unique users for their 'weight_loginfo' health metrics, and 33 unique users for the remaining data. Given the very low sample size of 'weight_loginfo' data providers, I have decided to exclude this data frame along with the 'daily_sleep' data from my analysis, as they do not contribute significant insights. Instead, I have utilized the **'daily_activity,' 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' 'sleep_day,' and 'minute_METs_narrow' data tables for my analysis, all of which include inputs from 33 unique users**.
 
 
+#### Data Combining
+As mentioned earlier,the 6 tables from **12 May 2016 to 11 April 2016** and 6 tables from **12 April 2016 to 12 May 2016** were stacked and combined.
+
+* combined **daily_activity** table consists of 1397 rows.
+* combined **sleep_day** table consists of 413 rows.
+* combined **hourly_activity**[i.e. combination of 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,'] table consists o 
+
+
+
 
 
 
