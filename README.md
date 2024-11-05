@@ -281,6 +281,18 @@ The figure below shows the relation between **Total sleeping time and calories b
 Higher duration of sleep is associated with higher amount of calories burned. An adequate duration and good quality of sleep constitutes to higher calories burned during the sleeping process. However sleeping more than the required range doesn't seem to burn more calories and in fact causes the opposite to occur, which is burn fewer calories.
 <br>
 
+### 5. Share
+![BellaBeat: Smart Device Analysis Dashboard]()
+
+View [BellaBeat: Smart Device Analysis Dashboard]().
+
+### 6. Act
+#### <ins>Recommendations</ins>
+To develop new marketing strategies aimed at unlocking growth opportunities and expanding the business, we should refer to the analysis above and consider those insights. Below are my key recommendations for addressing this business scenario.
+
+Primary Recommendations for Marketing Strategists:
+
+
 
 
 
