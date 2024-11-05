@@ -42,7 +42,7 @@ The basis for this analysis is **12-03-2016 to 12-05-2016** data and the steps f
 
 * The "Id" column indicates the number of unique users represented in the dataset. There were 24 unique users who provided data for their 'daily_sleep' health metrics, 8 unique users for their 'weight_loginfo' health metrics, and 35 unique users for the remaining data. Given the very low sample size of 'weight_loginfo' data providers, I have decided to exclude this data frame along with the 'daily_sleep' data from my analysis, as they do not contribute significant insights. Instead, I have utilized the **'daily_activity,' 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' data tables for my analysis, all of which include inputs from 35 unique users, and 'sleep_day' table, which contain 24 unique users**.
 
-#### Data Exploration
+#### Data Exploration & Cleaning
 My initial step was to check the individual tables one by one using **Excel** to determine the **data type** and to  uncover any **missing values, outliers, inconsistencies, and errors** within the tables. 
 Later, I have used both **SQL** and **Python** to check null values, outliers, inconsistencies, and errors within the tables.
 I have perormed the General Statistical Analysis for all the three final tables on **Python**.
@@ -124,7 +124,7 @@ and the **data type** of each variable is depicted below:
 #### Data Pre-processing & Combining
 As mentioned earlier,the 5 tables from **12 May 2016 to 11 April 2016** and 5 tables from **12 April 2016 to 12 May 2016** were stacked and combined.
 
-* Pre-processing : combination of 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' tables,from **12 May 2016 to 11 April 2016** and from **12 April 2016 to 12 May 2016** , into two tables i.e. **hourly_activity_1** and **hourly_activity_2**, was done using **Excel**.
+* Pre-processing : combination of 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' tables,from **12 May 2016 to 11 April 2016** and from **12 April 2016 to 12 May 2016** , into two tables i.e. **hourly_activity_1** and **hourly_activity_2**, respectively, was done using **Excel**.
   
 The **hourly_activity**[i.e. combination of **hourly_activity_1** and **hourly_activity_2** ] data set consists of **7 variables**, as shown in the following: <br>
 | **No.**|  **Variable**              |  **Description**                                        |
@@ -140,8 +140,7 @@ The **hourly_activity**[i.e. combination of **hourly_activity_1** and **hourly_a
 and the **data type** of each variable is depicted below:
 
 <img width="352" alt="DataType" src="">
-
- Combining of tables was done using **Python**. The final table consists of 46183 rows.
+  - Combining of tables was done using **Python**. The final table consists of 46183 rows.
  
 * Added 3 new columns to **daily_activity** table : **'Day_of_week	,' 'Total_active_mins,' and 'Total_active_hours'**.
      
@@ -157,7 +156,7 @@ The **daily_activity** data set consists of **18 variables**, as shown in the fo
 | 7      | LoggedActivitiesDistance   |                                                         |
 | 8      | VeryActiveDistance         | Distance covered while doing very active movements      |
 | 9      | ModeratelyActiveDistance   | Distance covered while doing moderate movements         |
-| 10      | LightActiveDistance        | Distance covered while doing light movements            |
+| 10     | LightActiveDistance        | Distance covered while doing light movements            |
 | 11     | SedentaryActiveDistance    | Distance covered while doing sedentary movements        |
 | 12     | VeryActiveMinutes          | Total time in a day involved in very active movements   |
 | 13     | FairlyActiveMinutes        | Total time in a day involved in fairly active movements |                            
@@ -190,6 +189,16 @@ and the **data type** of each variable is depicted below:
 <img width="352" alt="DataType" src="">
 
 * Combination of **daily_activity** table and **sleep_day** table was done using **Python**. The final tables consists of 1397 rows and 413 rows respectively.
+* I'll be using these three tables for future analysis.
+
+### 4. Analyze
+#### Data Analysis
+The analysis question is: 
+> What are some trends in smart device usage?
+
+
+
+
 
 
 
