@@ -24,4 +24,16 @@ This Kaggle dataset presents personal data from thirty users of Fitbit. Thirty s
 
 #### Considerations
 * There may be sampling bias since it is unclear how participants are selected. Participants who are willing to share their activity data publicly may also be more frequent users of Fitbit.
+* The dataset does not provide information about gender of the users. Bellabeat is a tech-driven wellness company for women only.
+* The data is from 2016, so it is outdated as fitness trackers matured a lot since then.
+
+**Tools:** <br>
+- Data pre-processing - Excel.
+- Data cleaning & combining - Python.
+- Exploratory Data analysis - SQl and Python
+- Data visualization - [Tableau](https://public.tableau.com/app/profile/sangeet.banik/viz/BellabeatProject_17307219480650/Coverpage)
+
+*
+
+
 
