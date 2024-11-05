@@ -68,7 +68,8 @@ The **daily_activity** data set consists of **15 variables**, as shown in the fo
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/da2e28b1-95d7-4272-8605-af5156a322c2">
+
 
 The **hourly_calories** data set consists of **3 variables**, as shown in the following: <br>
 | **No.**|  **Variable**              |  **Description**                                        |
@@ -79,7 +80,7 @@ The **hourly_calories** data set consists of **3 variables**, as shown in the fo
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/503fbcb1-0a53-42bc-9db1-eb926ef6300b">
 
 
 The **hourly_steps** data set consists of **3 variables**, as shown in the following: <br>
@@ -91,7 +92,8 @@ The **hourly_steps** data set consists of **3 variables**, as shown in the follo
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/a1f80bc2-7647-4cc2-bee9-fbdd328b8a2a">
+
 
 The **hourly_intensities** data set consists of **4 variables**, as shown in the following: <br>
 | **No.**|  **Variable**              |  **Description**                                        |
@@ -103,8 +105,7 @@ The **hourly_intensities** data set consists of **4 variables**, as shown in the
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="">
-
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/691e80f4-4919-4ccd-bf63-764e023cc31e">
 
 
 The **sleep_day** data set consists of **6 variables**, as shown in the following: <br>
@@ -119,7 +120,8 @@ The **sleep_day** data set consists of **6 variables**, as shown in the followin
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/6aa7976e-babf-49f3-9d5a-dada2786e871">
+
 
 #### Data Pre-processing & Combining
 As mentioned earlier,the 5 tables from **12 May 2016 to 11 April 2016** and 5 tables from **12 April 2016 to 12 May 2016** were stacked and combined.
@@ -139,7 +141,8 @@ The **hourly_activity**[i.e. combination of **hourly_activity_1** and **hourly_a
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/22315540-c0a4-49a7-98d6-a27b67ad7e3c">
+
   - Combining of tables was done using **Python**. The final table consists of 46183 rows.
  
 * Added 3 new columns to **daily_activity** table : **'Day_of_week	,' 'Total_active_mins,' and 'Total_active_hours'**.
@@ -170,9 +173,9 @@ and the **data type** of each variable is depicted below:
 
 <img width="352" alt="DataType" src="">
 
-*Added 2 new columns to **sleep_day** table : **'Day_of_week' and 'AwakeInBedTime'**.
+*Added 4 new columns to **sleep_day** table : **'Day_of_week,' 'AwakeInBedTime,' 'total_sleep_hr,' and 'total_timeinbed_hr'**.
      
-The **sleep_day** data set consists of **8 variables**, as shown in the following: <br>
+The **sleep_day** data set consists of **10 variables**, as shown in the following: <br>
 | **No.**|  **Variable**              |  **Description**                                        |
 |--------|----------------------------| --------------------------------------------------------|
 | 1      | Id                         | Unique ID assigned to each user                         |
@@ -183,10 +186,13 @@ The **sleep_day** data set consists of **8 variables**, as shown in the followin
 | 6      | TotalMinutesAsleepy        | Total mins of sleep                                     |
 | 7      | TotalTimeInBed             | Total mins lying on bed                                 |
 | 8      | AwakeInBedTime             | Total mins awake in bed                                 |
+| 9      | total_sleep_hr             | Total hours of sleep                                    |
+| 10     | total_timeinbed_hr         | Total hours in bed                                      |
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/8f0f150e-4a45-4d1a-a09f-00b605aa5c27">
+
 
 * Combination of **daily_activity** table and **sleep_day** table was done using **Python**. The final tables consists of 1397 rows and 413 rows respectively.
 * I'll be using these three tables for future analysis.
@@ -201,7 +207,8 @@ Transform the data to identify patterns and draw conclusions.The cleaned data is
 ### - Time Spent in A Day
 The figure below shows the distribution of how **Time spent in a day** by the 35 distinct user. 
 
-![Activity Level]()
+![Activity Level](https://github.com/user-attachments/assets/70071bb7-76ef-4426-be61-354baa4f056a)
+
 
 - **82% of User's time** is recorded as **sedentary activity**.
 - While only **1% stays fairly active** and **2% stays very active**. 
