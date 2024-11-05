@@ -46,8 +46,35 @@ The basis for this analysis is **12-03-2016 to 12-05-2016** data and the steps f
 #### Data Pre-processing & Combining
 As mentioned earlier,the 5 tables from **12 May 2016 to 11 April 2016** and 5 tables from **12 April 2016 to 12 May 2016** were stacked and combined.
 
-* pre-processing of **hourly_activity**[i.e. combination of 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' tables] table was done using **excel** and then concatenation using **Python**. The final consists of 46183 rows.
+* pre-processing of **hourly_activity**[i.e. combination of 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' tables] table was done using **excel** and then concatenation using **Python**. The final table consists of 46183 rows.
 * combination of **daily_activity** table and **sleep_day** table was done using **Python**. The final tables consists of 1397 rows and 413 rows respectively.
+
+#### Data Exploration
+My initial step was to check the individual tables one by one using Excel to determine the **data type** and to  uncover any **missing values, outliers, inconsistencies, and errors** within the tables. 
+Later, I have used both **SQL** and **Python** to check null values, outliers, inconsistencies, and errors within the tables.
+I have perormed the General Statistical Analysis for all the three final tables on **Python**.
+
+The **daily_activity** data set consists of **15 variables**, as shown in the following: <br>
+| **No.**|  **Variable**              |  **Description**                                        |
+|--------|----------------------------| --------------------------------------------------------|
+| 1      | Id                         | Unique ID assigned to each user                         |
+| 2      | ActivityDate               | Date of the Log                                         |
+| 3      | TotalSteps                 | Total steps taken in a day                              |
+| 4      | TotalDistance              | Total distance in a day                                 |
+| 5      | TrackerDistance            | Total distance recorded in tracker                      |
+| 6      | LoggedActivitiesDistance   |                                                         |
+| 7      | VeryActiveDistance         | Distance covered while doing very active movements      |
+| 8      | ModeratelyActiveDistance   | Distance covered while doing moderate movements         |
+| 9      | LightActiveDistance        | Distance covered while doing light movements            |
+| 10     | SedentaryActiveDistance    | Distance covered while doing sedentary movements        |
+| 11     | VeryActiveMinutes          | Total time in a day involved in very active movements   |
+| 12     | FairlyActiveMinutes        | Total time in a day involved in fairly active movements |                            
+| 13     | LightlyActiveMinutes       | Total time in a day involved in lighth movements        | 
+| 14     | SedentaryMinutes           | Total time in a day involved in vsedentary movements    |
+| 15     | Calories                   | Calories burned in a day                                |
+
+
+
 
 
 
