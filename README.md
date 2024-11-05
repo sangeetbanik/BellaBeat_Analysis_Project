@@ -254,12 +254,34 @@ The figure below shows the distribution of **distance covered per type of activi
 - **Lightly active movements** cover the majority of the distance i.e. **61% o total distance covered in a day* .
 - **27%** accounts to **very active movements** and **10%** to **fairly active movements**.
 
+### - Most Active hour of the day
+The figure below shows the **Most desired time for workout**.
+![]()
+
+- **No correlation** between the activity level and sleep duration.
+- Thus we can say they are not correlated in any way.
+
 ### - Activity duration and sleep duration
-The figure below shows the relation between **duration o various activity and sleep duartion**.
+The figure below shows the relation between **duration of various activity and sleep duartion**.
 ![Activity Level vs Sleep]()
 
 - **No correlation** between the activity level and sleep duration.
 - Thus we can say they are not correlated in any way.
+
+### - Total sleep miniutes and Calories burned in day
+The figure below shows the relation between **Total sleeping time and calories burned** . 
+
+![Sleep Time Vs Calories burned]()
+
+- There is a strong **positive correlation**. 
+#### Key Findings:
+
+* The R-Squared value for Total distance graph is 0.871
+  
+Higher duration of sleep is associated with higher amount of calories burned. An adequate duration and good quality of sleep constitutes to higher calories burned during the sleeping process. However sleeping more than the required range doesn't seem to burn more calories and in fact causes the opposite to occur, which is burn fewer calories.
+<br>
+
+
 
 
 
