@@ -15,5 +15,13 @@ Working for a high-tech company that makes health-focused products for women, I 
 > 2. How could these trends apply to Bellabeat customers?
 > 3. How could these trends help influence Bellabeat marketing strategy?
 
+### 2. Prepare
+#### 🔗 Quick Links
+**Data Source:** [FitBit Fitness Tracker Data](https://www.kaggle.com/arashnic/fitbit) <br>
+[CC0: Public Domain, dataset made available through [Mobius](https://www.kaggle.com/arashnic)]
 
+This Kaggle dataset presents personal data from thirty users of Fitbit. Thirty such eligible Fitbit users had agreed to let their personal tracker data be submitted and contains minute-level outputs about physical activity, heart rate, and sleep monitoring. The data set entails information about daily activity, steps, and heart rate, which can be useful in analyzing the habits of the users.
+
+#### Considerations
+* There may be sampling bias since it is unclear how participants are selected. Participants who are willing to share their activity data publicly may also be more frequent users of Fitbit.
 
