@@ -292,6 +292,18 @@ To develop new marketing strategies aimed at unlocking growth opportunities and 
 
 Primary Recommendations for Marketing Strategists:
 
+* The general practice of consumers is most likely idle; thus, they turn into a sedentary person. Smart device notices given between the peak working hours of 7:00 AM to 8:00 PM can activate someone by reminding them to start the device and encourage an active lifestyle.
+*  Push notifications through the application to remind users to get adequate sleep each night, and introduce REM sleep monitoring as an indication of quality sleep.
+*   Conduct a daily or weekly calorie competition in which the best scorers earn points. These points can be accumulated and used for future reductions when purchasing goods.
+
+## 🔮 Conclusion
+After collecting, transforming, cleaning, organizing, and analyzing the datasets as requested, we now have enough evidence to answer the questions presented regarding the businesses.
+
+Thus, we can conclude that duration and intensity of the activity are directly proportional to calories burnt. 
+
+Most consumers seem to get enough sleep but with a small portion getting excessive sleep or too low an amount of sleep.
+
+The consumers are likely to take part in low up to high-intensity activity during 7:00 AM to 8:00 PM.
 
 
 
