@@ -169,9 +169,6 @@ The **daily_activity** data set consists of **18 variables**, as shown in the fo
 | 17     | Total_active_hours         | Total time of activity in  hours                        |
 | 18     | Calories                   | Calories burned in a day                                |
 
-and the **data type** of each variable is depicted below:
-
-<img width="352" alt="DataType" src="">
 
 *Added 4 new columns to **sleep_day** table : **'Day_of_week,' 'AwakeInBedTime,' 'total_sleep_hr,' and 'total_timeinbed_hr'**.
      
@@ -217,7 +214,8 @@ The figure below shows the distribution of how **Time spent in a day** by the 35
 ### - Average Steps per User
 The figure below shows the **Average steps taken per day** by the 35 distinct user. 
 
-![Average steps per User]()
+![Average steps per User](https://github.com/user-attachments/assets/fb2471bf-39d3-4b37-8af2-666083a8a0ba)
+
 
 - **20% of Users** are able to hit atleast 10k steps daily.
 - While **80% of Users** all below the recommended range. 
@@ -226,7 +224,8 @@ The figure below shows the **Average steps taken per day** by the 35 distinct us
 ### - Activity duration and Calories burned in day
 The figure below shows the relation between **Type of activity and calories burned** by the 35 distinct user in a day. 
 
-![Activity Vs Calories]()
+![Activity Vs Calories](https://github.com/user-attachments/assets/e7083242-356e-4c54-8679-c4d9886b6be0)
+
 
 - There is a strong **positive correlation**. 
 #### Key Findings:
@@ -241,7 +240,8 @@ There is a strong correlation between Very Active minutes and the amount of calo
 ### - Total distance,Tracker distance, Total steps and Calories burned in day
 The figure below shows the relation between **Total distance,Tracker distance, Total steps and calories burned** by the 35 distinct user in a day. 
 
-![Total distance,Tracker distance, Total steps and Calories burned in day]()
+![Total distance,Tracker distance, Total steps and Calories burned in day](https://github.com/user-attachments/assets/bc82dc44-395d-4cb3-9988-3b5c2806bae1)
+
 
 - There is a strong **positive correlation**. 
 #### Key Findings:
@@ -256,29 +256,33 @@ There is a strong correlation between activity and the amount of calories burned
 ### - Distance covered per type of activity in a day
 The figure below shows the distribution of **distance covered per type of activity** by the 35 distinct user in a day. 
 
-![Distance per activity Distribution]()
+![Distance per activity Distribution](https://github.com/user-attachments/assets/b840131a-8517-443b-b5a8-626877bba35e)
+
 
 - **Lightly active movements** cover the majority of the distance i.e. **61% o total distance covered in a day* .
 - **27%** accounts to **very active movements** and **10%** to **fairly active movements**.
 
 ### - Most Active hour of the day
 The figure below shows the **Most desired time for workout**.
-![]()
+![Most desired hours for workout](https://github.com/user-attachments/assets/c493650c-9f2b-4e55-a4ca-f64c6f224da2)
+
 
 - **No correlation** between the activity level and sleep duration.
 - Thus we can say they are not correlated in any way.
 
 ### - Activity duration and sleep duration
 The figure below shows the relation between **duration of various activity and sleep duartion**.
-![Activity Level vs Sleep]()
+![Activity Level vs Sleep](https://github.com/user-attachments/assets/87f6857f-9ef2-49e6-924c-7394006d58fb)
+
 
 - **No correlation** between the activity level and sleep duration.
 - Thus we can say they are not correlated in any way.
 
-### - Total sleep miniutes and Calories burned in day
+### - Total sleep minutes and Calories burned in day
 The figure below shows the relation between **Total sleeping time and calories burned** . 
 
-![Sleep Time Vs Calories burned]()
+![Sleep Time Vs Calories burned](https://github.com/user-attachments/assets/425cd47a-47ff-4a20-92b4-0a6cd47a5a29)
+
 
 - There is a strong **positive correlation**. 
 #### Key Findings:
@@ -289,9 +293,10 @@ Higher duration of sleep is associated with higher amount of calories burned. An
 <br>
 
 ### 5. Share
-![BellaBeat: Smart Device Analysis Dashboard]()
+![BellaBeat: Smart Device Analysis Dashboard](https://github.com/user-attachments/assets/e0665353-2122-4782-a803-562dbfe7bbc7)
 
-View [BellaBeat: Smart Device Analysis Dashboard]().
+
+View [BellaBeat: Smart Device Analysis Dashboard](https://public.tableau.com/app/profile/sangeet.banik/viz/BellabeatProjectDashboard/Coverpage).
 
 ### 6. Act
 #### <ins>Recommendations</ins>
