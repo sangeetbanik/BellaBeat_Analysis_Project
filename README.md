@@ -73,6 +73,40 @@ The **daily_activity** data set consists of **15 variables**, as shown in the fo
 | 14     | SedentaryMinutes           | Total time in a day involved in vsedentary movements    |
 | 15     | Calories                   | Calories burned in a day                                |
 
+and the **data type** of each variable is depicted below:
+
+<img width="352" alt="DataType" src="">
+
+The **hourly_activity** data set consists of **7 variables**, as shown in the following: <br>
+| **No.**|  **Variable**              |  **Description**                                        |
+|--------|----------------------------| --------------------------------------------------------|
+| 1      | Id                         | Unique ID assigned to each user                         |
+| 2      | ActivityDate               | Date of the Log                                         |
+| 3      | ActivityHour               | Hour of the Log                                         |
+| 4      | StepTotal                  | Total steps taken in an hour                            |
+| 5      | TotalIntensity             | intensity in an hour                                    |
+| 6      | AverageIntensity           | Total distance recorded in tracker                      |
+| 7      | Calories                   | Calories burned in an hour                              |
+
+and the **data type** of each variable is depicted below:
+
+<img width="352" alt="DataType" src="">
+
+The **sleep_day** data set consists of **6 variables**, as shown in the following: <br>
+| **No.**|  **Variable**              |  **Description**                                        |
+|--------|----------------------------| --------------------------------------------------------|
+| 1      | Id                         | Unique ID assigned to each user                         |
+| 2      | SleepDay                   | Date of the Log                                         |
+| 3      | Sleep_time                 | Time of the Log                                         |
+| 4      | TotalSleepRecords          | Totalno.of logs                                         |
+| 5      | TotalMinutesAsleepy        | Total mins of sleep                                     |
+| 6      | TotalTimeInBed             | Total mins lying on bed                      |
+
+and the **data type** of each variable is depicted below:
+
+<img width="352" alt="DataType" src="">
+
+
 
 
 
