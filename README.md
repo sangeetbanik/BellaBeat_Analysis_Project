@@ -196,6 +196,73 @@ and the **data type** of each variable is depicted below:
 The analysis question is: 
 > What are some trends in smart device usage?
 
+Transform the data to identify patterns and draw conclusions.The cleaned data is imported into Tableau for analysis and the figures plotted are displayed in the following.
+
+### - Time Spent in A Day
+The figure below shows the distribution of how **Time spent in a day** by the 35 distinct user. 
+
+![Activity Level]()
+
+- **82% of User's time** is recorded as **sedentary activity**.
+- While only **1% stays fairly active** and **2% stays very active**. 
+<br>
+
+### - Average Steps per User
+The figure below shows the **Average steps taken per day** by the 35 distinct user. 
+
+![Average steps per User]()
+
+- **20% of Users** are able to hit atleast 10k steps daily.
+- While **80% of Users** all below the recommended range. 
+<br>
+
+### - Activity duration and Calories burned in day
+The figure below shows the relation between **Type of activity and calories burned** by the 35 distinct user in a day. 
+
+![Activity Vs Calories]()
+
+- There is a strong **positive correlation**. 
+#### Key Findings:
+
+* The R-Squared value for Low Active graph is 0.19
+* The R-Squared value for Fairly Active graph is 0.084
+* The R-Squared value for Very Active graph is 0.326
+
+There is a strong correlation between Very Active minutes and the amount of calories burned. The r-squared value seems to rise as the intensity and the duration is the activity increases. Thus by inferring to the r-squared values of the respective trend lines of the graphs, we can conclude that the higher the intensity and the duration of the activity, the more calories is burned.
+<br>
+
+### - Total distance,Tracker distance, Total steps and Calories burned in day
+The figure below shows the relation between **Total distance,Tracker distance, Total steps and calories burned** by the 35 distinct user in a day. 
+
+![Total distance,Tracker distance, Total steps and Calories burned in day]()
+
+- There is a strong **positive correlation**. 
+#### Key Findings:
+
+* The R-Squared value for Total distance graph is 0.3919
+* The R-Squared value for Tracker distance graph is 0.3915
+* The R-Squared value for Total Steps graph is 0.3346
+
+There is a strong correlation between activity and the amount of calories burned. The r-squared value seems to rise as the intensity of the activity increases. Thus by inferring to the r-squared values of the respective trend lines of the graphs, we can conclude that the higher the intensity of the activity, the more calories is burned.
+<br>
+
+### - Distance covered per type of activity in a day
+The figure below shows the distribution of **distance covered per type of activity** by the 35 distinct user in a day. 
+
+![Distance per activity Distribution]()
+
+- **Lightly active movements** cover the majority of the distance i.e. **61% o total distance covered in a day* .
+- **27%** accounts to **very active movements** and **10%** to **fairly active movements**.
+
+### - Activity duration and sleep duration
+The figure below shows the relation between **duration o various activity and sleep duartion**.
+![Activity Level vs Sleep]()
+
+- **No correlation** between the activity level and sleep duration.
+- Thus we can say they are not correlated in any way.
+
+
+
 
 
 
