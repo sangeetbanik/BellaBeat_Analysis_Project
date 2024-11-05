@@ -42,15 +42,8 @@ The basis for this analysis is **12-03-2016 to 12-05-2016** data and the steps f
 
 * The "Id" column indicates the number of unique users represented in the dataset. There were 24 unique users who provided data for their 'daily_sleep' health metrics, 8 unique users for their 'weight_loginfo' health metrics, and 35 unique users for the remaining data. Given the very low sample size of 'weight_loginfo' data providers, I have decided to exclude this data frame along with the 'daily_sleep' data from my analysis, as they do not contribute significant insights. Instead, I have utilized the **'daily_activity,' 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' data tables for my analysis, all of which include inputs from 35 unique users, and 'sleep_day' table, which contain 24 unique users**.
 
-
-#### Data Pre-processing & Combining
-As mentioned earlier,the 5 tables from **12 May 2016 to 11 April 2016** and 5 tables from **12 April 2016 to 12 May 2016** were stacked and combined.
-
-* pre-processing of **hourly_activity**[i.e. combination of 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' tables] table was done using **excel** and then concatenation using **Python**. The final table consists of 46183 rows.
-* combination of **daily_activity** table and **sleep_day** table was done using **Python**. The final tables consists of 1397 rows and 413 rows respectively.
-
 #### Data Exploration
-My initial step was to check the individual tables one by one using Excel to determine the **data type** and to  uncover any **missing values, outliers, inconsistencies, and errors** within the tables. 
+My initial step was to check the individual tables one by one using **Excel** to determine the **data type** and to  uncover any **missing values, outliers, inconsistencies, and errors** within the tables. 
 Later, I have used both **SQL** and **Python** to check null values, outliers, inconsistencies, and errors within the tables.
 I have perormed the General Statistical Analysis for all the three final tables on **Python**.
 
@@ -77,7 +70,63 @@ and the **data type** of each variable is depicted below:
 
 <img width="352" alt="DataType" src="">
 
-The **hourly_activity** data set consists of **7 variables**, as shown in the following: <br>
+The **hourly_calories** data set consists of **3 variables**, as shown in the following: <br>
+| **No.**|  **Variable**              |  **Description**                                        |
+|--------|----------------------------| --------------------------------------------------------|
+| 1      | Id                         | Unique ID assigned to each user                         |
+| 2      | ActivityDate               | Date of the Log                                         |
+| 3      | Calories                   | Calories burned in an hour                              |
+
+and the **data type** of each variable is depicted below:
+
+<img width="352" alt="DataType" src="">
+
+
+The **hourly_steps** data set consists of **3 variables**, as shown in the following: <br>
+| **No.**|  **Variable**              |  **Description**                                        |
+|--------|----------------------------| --------------------------------------------------------|
+| 1      | Id                         | Unique ID assigned to each user                         |
+| 2      | ActivityDate               | Date of the Log                                         |
+| 3      | StepTotal                  | Total steps taken in an hour                            |
+
+and the **data type** of each variable is depicted below:
+
+<img width="352" alt="DataType" src="">
+
+The **hourly_intensities** data set consists of **4 variables**, as shown in the following: <br>
+| **No.**|  **Variable**              |  **Description**                                        |
+|--------|----------------------------| --------------------------------------------------------|
+| 1      | Id                         | Unique ID assigned to each user                         |
+| 2      | ActivityDate               | Date of the Log                                         |
+| 3      | TotalIntensity             | intensity in an hour                                    |
+| 4      | AverageIntensity           | Total distance recorded in tracker                      |
+
+and the **data type** of each variable is depicted below:
+
+<img width="352" alt="DataType" src="">
+
+
+
+The **sleep_day** data set consists of **6 variables**, as shown in the following: <br>
+| **No.**|  **Variable**              |  **Description**                                        |
+|--------|----------------------------| --------------------------------------------------------|
+| 1      | Id                         | Unique ID assigned to each user                         |
+| 2      | SleepDay                   | Date of the Log                                         |
+| 3      | Sleep_time                 | Time of the Log                                         |
+| 4      | TotalSleepRecords          | Totalno.of logs                                         |
+| 5      | TotalMinutesAsleepy        | Total mins of sleep                                     |
+| 6      | TotalTimeInBed             | Total mins lying on bed                                 |
+
+and the **data type** of each variable is depicted below:
+
+<img width="352" alt="DataType" src="">
+
+#### Data Pre-processing & Combining
+As mentioned earlier,the 5 tables from **12 May 2016 to 11 April 2016** and 5 tables from **12 April 2016 to 12 May 2016** were stacked and combined.
+
+* Pre-processing : combination of 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' tables,from **12 May 2016 to 11 April 2016** and from **12 April 2016 to 12 May 2016** , into two tables i.e. **hourly_activity_1** and **hourly_activity_2**, was done using **Excel**.
+  
+The **hourly_activity**[i.e. combination of **hourly_activity_1** and **hourly_activity_2** ] data set consists of **7 variables**, as shown in the following: <br>
 | **No.**|  **Variable**              |  **Description**                                        |
 |--------|----------------------------| --------------------------------------------------------|
 | 1      | Id                         | Unique ID assigned to each user                         |
@@ -92,20 +141,55 @@ and the **data type** of each variable is depicted below:
 
 <img width="352" alt="DataType" src="">
 
-The **sleep_day** data set consists of **6 variables**, as shown in the following: <br>
+ Combining of tables was done using **Python**. The final table consists of 46183 rows.
+ 
+* Added 3 new columns to **daily_activity** table : **'Day_of_week	,' 'Total_active_mins,' and 'Total_active_hours'**.
+     
+The **daily_activity** data set consists of **18 variables**, as shown in the following: <br>
 | **No.**|  **Variable**              |  **Description**                                        |
 |--------|----------------------------| --------------------------------------------------------|
 | 1      | Id                         | Unique ID assigned to each user                         |
-| 2      | SleepDay                   | Date of the Log                                         |
-| 3      | Sleep_time                 | Time of the Log                                         |
-| 4      | TotalSleepRecords          | Totalno.of logs                                         |
-| 5      | TotalMinutesAsleepy        | Total mins of sleep                                     |
-| 6      | TotalTimeInBed             | Total mins lying on bed                      |
+| 2      | ActivityDate               | Date of the Log                                         |
+| 3      | Day_of_week                | Day of the Log                                          |
+| 4      | TotalSteps                 | Total steps taken in a day                              |
+| 5      | TotalDistance              | Total distance in a day                                 |
+| 6      | TrackerDistance            | Total distance recorded in tracker                      |
+| 7      | LoggedActivitiesDistance   |                                                         |
+| 8      | VeryActiveDistance         | Distance covered while doing very active movements      |
+| 9      | ModeratelyActiveDistance   | Distance covered while doing moderate movements         |
+| 10      | LightActiveDistance        | Distance covered while doing light movements            |
+| 11     | SedentaryActiveDistance    | Distance covered while doing sedentary movements        |
+| 12     | VeryActiveMinutes          | Total time in a day involved in very active movements   |
+| 13     | FairlyActiveMinutes        | Total time in a day involved in fairly active movements |                            
+| 14     | LightlyActiveMinutes       | Total time in a day involved in lighth movements        | 
+| 15     | SedentaryMinutes           | Total time in a day involved in vsedentary movements    |
+| 16     | Total_active_mins          | Total time of activity in  mins                         |
+| 17     | Total_active_hours         | Total time of activity in  hours                        |
+| 18     | Calories                   | Calories burned in a day                                |
 
 and the **data type** of each variable is depicted below:
 
 <img width="352" alt="DataType" src="">
 
+*Added 2 new columns to **sleep_day** table : **'Day_of_week' and 'AwakeInBedTime'**.
+     
+The **sleep_day** data set consists of **8 variables**, as shown in the following: <br>
+| **No.**|  **Variable**              |  **Description**                                        |
+|--------|----------------------------| --------------------------------------------------------|
+| 1      | Id                         | Unique ID assigned to each user                         |
+| 2      | SleepDay                   | Date of the Log                                         |
+| 3      | Sleep_time                 | Time of the Log                                         |
+| 4      | Day_of_week                | Name of the day                                         |
+| 5      | TotalSleepRecords          | Totalno.of logs                                         |
+| 6      | TotalMinutesAsleepy        | Total mins of sleep                                     |
+| 7      | TotalTimeInBed             | Total mins lying on bed                                 |
+| 8      | AwakeInBedTime             | Total mins awake in bed                                 |
+
+and the **data type** of each variable is depicted below:
+
+<img width="352" alt="DataType" src="">
+
+* Combination of **daily_activity** table and **sleep_day** table was done using **Python**. The final tables consists of 1397 rows and 413 rows respectively.
 
 
 
