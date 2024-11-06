@@ -36,13 +36,12 @@ This Kaggle dataset presents personal data from thirty users of Fitbit. Thirty s
 ### 3. Process
 The basis for this analysis is **12-03-2016 to 12-05-2016** data and the steps for processing the data are as follow:
 1) [Data Pre-processing]()
-2) [Data combination]()
-3) [Data cleaning]()
-4) [Exploratory_Data Analysis]()
+2) [Data cleaning and combination]()
+3) [Exploratory_Data Analysis]()
 
 * The "Id" column indicates the number of unique users represented in the dataset. There were 24 unique users who provided data for their 'daily_sleep' health metrics, 8 unique users for their 'weight_loginfo' health metrics, and 35 unique users for the remaining data. Given the very low sample size of 'weight_loginfo' data providers, I have decided to exclude this data frame from my analysis, as it does not contribute significant insights. Instead, I have utilized the **'daily_activity,' 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' data tables for my analysis, all of which include inputs from 35 unique users, and 'sleep_day' table, which contain 24 unique users**.
 
-#### Data Exploration & Cleaning
+#### Data Preprocessing
 My initial step was to check the individual tables one by one using **Excel** to determine the **data type** and to  uncover any **missing values, outliers, inconsistencies, and errors** within the tables. 
 Later, I have used both **SQL** and **Python** to check null values, outliers, inconsistencies, and errors within the tables.
 I have performed the General Statistical Analysis for all the three final tables on **Python**.
@@ -68,7 +67,7 @@ The **daily_activity** data set consists of **15 variables**, as shown in the fo
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/da2e28b1-95d7-4272-8605-af5156a322c2">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/da2e28b1-95d7-4272-8605-af5156a322c2"><br>
 
 
 The **hourly_calories** data set consists of **3 variables**, as shown in the following: <br>
@@ -80,7 +79,7 @@ The **hourly_calories** data set consists of **3 variables**, as shown in the fo
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/503fbcb1-0a53-42bc-9db1-eb926ef6300b">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/503fbcb1-0a53-42bc-9db1-eb926ef6300b"><br>
 
 
 The **hourly_steps** data set consists of **3 variables**, as shown in the following: <br>
@@ -92,7 +91,7 @@ The **hourly_steps** data set consists of **3 variables**, as shown in the follo
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/a1f80bc2-7647-4cc2-bee9-fbdd328b8a2a">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/a1f80bc2-7647-4cc2-bee9-fbdd328b8a2a"><br>
 
 
 The **hourly_intensities** data set consists of **4 variables**, as shown in the following: <br>
@@ -105,7 +104,7 @@ The **hourly_intensities** data set consists of **4 variables**, as shown in the
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/691e80f4-4919-4ccd-bf63-764e023cc31e">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/691e80f4-4919-4ccd-bf63-764e023cc31e"><br>
 
 
 The **sleep_day** data set consists of **6 variables**, as shown in the following: <br>
@@ -120,10 +119,10 @@ The **sleep_day** data set consists of **6 variables**, as shown in the followin
 
 and the **data type** of each variable is depicted below:
 
-<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/6aa7976e-babf-49f3-9d5a-dada2786e871">
+<img width="352" alt="DataType" src="https://github.com/user-attachments/assets/6aa7976e-babf-49f3-9d5a-dada2786e871"><br>
 
 
-#### Data Pre-processing & Combining
+#### Data Combining
 As mentioned earlier,the 5 tables from **12 May 2016 to 11 April 2016** and 5 tables from **12 April 2016 to 12 May 2016** were stacked and combined.
 
 * Pre-processing : combination of 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' tables,from **12 May 2016 to 11 April 2016** and from **12 April 2016 to 12 May 2016** , into two tables i.e. **hourly_activity_1** and **hourly_activity_2**, respectively, was done using **Excel**.
