@@ -1,3 +1,4 @@
+# Pre-processing using Excel.
 - Initially, I checked all the tables to get familiarise with the datasets.
 - 6 tables were chosen from **12 May 2016 to 11 April 2016** and **12 April 2016 to 12 May 2016** respectively. Those are:- **'weight_loginfo', 'daily_activity,' 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' and  'sleep_day'**.
 - **'weight_loginfo'** tables contains input from only 8 unique users. Given the very low sample size of 'weight_loginfo' data providers, I have decided to exclude this data frame  as it does not contribute significant insights.
