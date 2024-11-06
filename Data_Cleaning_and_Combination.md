@@ -2,13 +2,13 @@
 - Combined the required tables from **12 May 2016 to 11 April 2016 and 12 April 2016 to 12 May 2016**.
 ```PYTHON
 #import all necessary libraries
-import pandas as pd # type: ignore
-import numpy as np # type: ignore
-import matplotlib.pyplot as plt # type: ignore
-import seaborn as sns # type: ignore
-import scipy as stats # type: ignore
-from scipy.stats import pearsonr # type: ignore
-from sklearn.linear_model import LinearRegression # type: ignore
+import pandas as pd 
+import numpy as np 
+import matplotlib.pyplot as plt 
+import seaborn as sns 
+import scipy as stats 
+from scipy.stats import pearsonre
+from sklearn.linear_model import LinearRegression 
 print("import successful")
 
 #read 'daily_activity' csv files
@@ -35,12 +35,58 @@ print("combining successful")
 
 ```
 
+- checked for missing values, duplicates, outliers, inconsistencies, and errors within the tables before combining them.
 
+```PYTHON
+#checking or nulls and duplicates in Daily_activity dataframe
+missing_df = df_activity.isnull().sum()
+print(missing_df) #prints the number of missing values in each column
 
+duplicate_df = df_activity.duplicated().sum()
+print("no.of duplicates:", duplicate_df) #prints the number of duplicate rows in the dataframe
 
+#checking or nulls and duplicates in sleep_daily dataframe
+missing_sleep  = sleep.isnull().sum()
+print(f"Missing sleep: {missing_sleep}")
 
+duplicate_sleep = sleep.duplicated().sum()
+print("no.of duplicates:", duplicate_sleep) #prints the number of duplicate rows in the dataframe
 
-- checked for missing values, outliers, inconsistencies, and errors within the tables before combining them.
+#checking or nulls and duplicates in hourly_activity dataframe
+missing_hourly  = df_hourly.isnull().sum()
+print(f"Missing values: {missing_hourly}")
+
+duplicate_hr = df_hourly.duplicated().sum()
+print("no.of duplicates:", duplicate_hr) #prints the number of duplicate rows in the dataframe
+```
+- checked for the datatypes o all the variables in the tables.
+```PYTHON
+#checking the datatypes and changing them if necessary
+df_activity.info()
+```
+![Screenshot 2024-11-06 160023](https://github.com/user-attachments/assets/23df4b15-eaef-4968-b496-91bd7e1fd0db)
+```PYTHON
+df_activity['ActivityDate'] = pd.to_datetime(df_activity['ActivityDate'], format= '%m/%d/%Y') #to change ActivityDate from object type to datetime type
+```
+```PYTHON
+#checking the datatypes and changing them if necessary
+sleep.info()
+```
+![Screenshot 2024-11-06 161120](https://github.com/user-attachments/assets/9846a6b0-ec0e-4dc2-84df-b1566cdf8583)
+```PYTHON
+sleep['Sleep_Day'] = sleep['Sleep_Day'].astype('datetime64[ns]')
+```
+```PYTHON
+#checking the datatypes and changing them if necessary
+df_hourly.info()
+```
+![Screenshot 2024-11-06 161711](https://github.com/user-attachments/assets/cc9d8324-fbe4-44b0-8254-b7b526710b21)
+```PYTHON
+df_hourly['ActivityDate'] = df_hourly['ActivityDate'].astype('datetime64[ns]')
+```  
+- analysing the general statistics of each table check or any outliers 
+```PYTHON
+
 
 
 
