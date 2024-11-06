@@ -45,7 +45,7 @@ The basis for this analysis is **12-03-2016 to 12-05-2016** data and the steps f
 #### Data Exploration & Cleaning
 My initial step was to check the individual tables one by one using **Excel** to determine the **data type** and to  uncover any **missing values, outliers, inconsistencies, and errors** within the tables. 
 Later, I have used both **SQL** and **Python** to check null values, outliers, inconsistencies, and errors within the tables.
-I have perormed the General Statistical Analysis for all the three final tables on **Python**.
+I have performed the General Statistical Analysis for all the three final tables on **Python**.
 
 The **daily_activity** data set consists of **15 variables**, as shown in the following: <br>
 | **No.**|  **Variable**              |  **Description**                                        |
