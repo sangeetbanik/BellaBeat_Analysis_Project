@@ -211,5 +211,46 @@ plt.show()
 ```
 ![output6](https://github.com/user-attachments/assets/41e94c7b-b519-4821-be86-42d14aee1bde)
 
+```PYTHON
+daily_sleep_merged = pd.merge(
+    daily_activity,
+    sleep,
+    left_on=['Id', 'ActivityDate'],
+    right_on=['Id', 'Sleep_Day'],
+    how='inner'
+)
+
+# Group by 'Id' and calculate the sum of required columns
+result = daily_sleep_merged.groupby('Id').agg(
+    total_sleep_min=('TotalMinutesAsleep', 'sum'),
+    total_timeinbed_min=('TotalTimeInBed', 'sum'),
+    calories=('Calories', 'sum')
+).reset_index()
+
+# Display the result
+print(result)
+r_value_1, _ = pearsonr(result['total_sleep_min'],result['calories'])
+r_value_2, _ = pearsonr(result['total_sleep_min'],result['calories'])
+
+lm = LinearRegression()
+lm.fit(result[['total_sleep_min']], result['calories'])
+r_sq_1 = lm.score(result[['total_sleep_min']], result['calories'])
+
+sns.regplot(
+    x="total_sleep_min",
+    y="calories",
+    data=result,
+    color='orange',
+    scatter_kws={'alpha': 0.5, 's': 50}
+)
+plt.title("Sleep Vs Calories burned")
+plt.xlabel("Total Sleep(in mins)")
+plt.ylabel("Calories Burned")
+plt.text(0.05, 0.95, f'r = {r_value_1:.2f}\nR² = {r_sq_1:.2f}', transform=plt.gca().transAxes, fontsize=12, verticalalignment='top')
+
+plt.show()
+```
+![output7](https://github.com/user-attachments/assets/7548d0e0-e8eb-4ffb-8934-403480e64fb8)
+
 
 
