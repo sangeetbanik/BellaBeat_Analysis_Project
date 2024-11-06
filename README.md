@@ -74,7 +74,7 @@ The **hourly_calories** data set consists of **3 variables**, as shown in the fo
 | **No.**|  **Variable**              |  **Description**                                        |
 |--------|----------------------------| --------------------------------------------------------|
 | 1      | Id                         | Unique ID assigned to each user                         |
-| 2      | ActivityDate               | Date of the Log                                         |
+| 2      | ActivityHour               | Date of the Log                                         |
 | 3      | Calories                   | Calories burned in an hour                              |
 
 and the **data type** of each variable is depicted below:
@@ -86,7 +86,7 @@ The **hourly_steps** data set consists of **3 variables**, as shown in the follo
 | **No.**|  **Variable**              |  **Description**                                        |
 |--------|----------------------------| --------------------------------------------------------|
 | 1      | Id                         | Unique ID assigned to each user                         |
-| 2      | ActivityDate               | Date of the Log                                         |
+| 2      | ActivityHour               | Date of the Log                                         |
 | 3      | StepTotal                  | Total steps taken in an hour                            |
 
 and the **data type** of each variable is depicted below:
@@ -98,7 +98,7 @@ The **hourly_intensities** data set consists of **4 variables**, as shown in the
 | **No.**|  **Variable**              |  **Description**                                        |
 |--------|----------------------------| --------------------------------------------------------|
 | 1      | Id                         | Unique ID assigned to each user                         |
-| 2      | ActivityDate               | Date of the Log                                         |
+| 2      | ActivityHour               | Date of the Log                                         |
 | 3      | TotalIntensity             | intensity in an hour                                    |
 | 4      | AverageIntensity           | Total distance recorded in tracker                      |
 
