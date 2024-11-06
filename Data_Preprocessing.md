@@ -5,7 +5,7 @@
 -  Created a new table named as **'hourly_activity'**.
    * by combining **'hourly_calories'**, **'hourly_intensities'**, and **'hourly_steps'**.
    * splitted *'ActivityHour'* column into two columns, namely *'ActivityDate' which contains only the date* and *'ActivityHour' which contains the hour of the day.*       
-- Added 3 new columns to "daily_activity" table : 'Day_of_week ,' 'Total_active_mins,' and 'Total_active_hours'.
+- Added 3 new columns to **"daily_activity"** table : **'Day_of_week ,' 'Total_active_mins,' and 'Total_active_hours'**.
   * Day_of_week        = TEXT("ActivityDate","dddd")
   * Total_active_mins  = "VeryActiveMinutes"+"FairlyActiveMinutes"+"LightlyActiveMinutes"+"SedentaryMinutes
   * Total_active_hours = ("Total_active_mins")/60
