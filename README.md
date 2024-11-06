@@ -35,7 +35,7 @@ This Kaggle dataset presents personal data from thirty users of Fitbit. Thirty s
 
 ### 3. Process
 The basis for this analysis is **12-03-2016 to 12-05-2016** data and the steps for processing the data are as follow:
-1) [Data Pre-processing]()
+1) [Data Pre-processing](https://github.com/sangeetbanik/BellaBeat_Analysis_Project/blob/main/Data_Preprocessing.md)
 2) [Data cleaning and combination]()
 3) [Exploratory_Data Analysis]()
 
