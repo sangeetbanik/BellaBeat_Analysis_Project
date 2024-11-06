@@ -31,7 +31,7 @@ This Kaggle dataset presents personal data from thirty users of Fitbit. Thirty s
 - Data pre-processing - Excel.
 - Data cleaning & combining - Python.
 - Exploratory Data analysis - SQl and Python
-- Data visualization - [Tableau](https://public.tableau.com/app/profile/sangeet.banik/viz/BellabeatProject_17307219480650/Coverpage)
+- Data visualization - [Tableau](https://public.tableau.com/app/profile/sangeet.banik/viz/BellabeatProjectDashboard/Coverpage)
 
 ### 3. Process
 The basis for this analysis is **12-03-2016 to 12-05-2016** data and the steps for processing the data are as follow:
