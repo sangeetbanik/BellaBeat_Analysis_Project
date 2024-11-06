@@ -21,4 +21,3 @@
        * AwakeInBedTime     = (TotalTimeInBed - TotalMinutesAsleep)
        * total_sleep_hr     = (TotalMinutesAsleep)/60
        * total_timeinbed_hr = (TotalTimeInBed)/60 
-```
