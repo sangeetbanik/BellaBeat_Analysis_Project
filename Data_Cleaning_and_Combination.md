@@ -1,5 +1,5 @@
 # Combination and cleaning using Python
-- Combined the required tables from **12 May 2016 to 11 April 2016 and 12 April 2016 to 12 May 2016**.
+- Combined the required tables from **12 May 2016 to 11 April 2016** and **12 April 2016 to 12 May 2016**.
 ```PYTHON
 #import all necessary libraries
 import pandas as pd 
@@ -59,7 +59,7 @@ print(f"Missing values: {missing_hourly}")
 duplicate_hr = df_hourly.duplicated().sum()
 print("no.of duplicates:", duplicate_hr) #prints the number of duplicate rows in the dataframe
 ```
-- checked for the datatypes o all the variables in the tables.
+- checked for the datatypes of all the variables in the tables.
 ```PYTHON
 #checking the datatypes and changing them if necessary
 df_activity.info()
@@ -86,6 +86,19 @@ df_hourly['ActivityDate'] = df_hourly['ActivityDate'].astype('datetime64[ns]')
 ```  
 - analysing the general statistics of each table check or any outliers 
 ```PYTHON
+df_activity.describe(include = 'all')
+```
+![Screenshot 2024-11-06 162929](https://github.com/user-attachments/assets/01d70b17-03bd-4fb9-a6a7-25aac956b435)
+
+```PYTHON
+sleep.describe(include = 'all')
+```
+![Screenshot 2024-11-06 162811](https://github.com/user-attachments/assets/472e8393-d5d2-4f8b-9dc9-fc423fde890d)
+
+```PYTHON
+df_hourly.describe(include = 'all')
+```
+![Screenshot 2024-11-06 162731](https://github.com/user-attachments/assets/c206f56e-d164-4d6a-9e6f-1cbb569dd4d2)
 
 
 
