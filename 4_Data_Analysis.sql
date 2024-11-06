@@ -3,7 +3,7 @@ Select Distinct Id, SUM(SedentaryMinutes) as sedentary_mins,
 SUM(LightlyActiveMinutes) as lightly_active_mins,
 SUM(FairlyActiveMinutes) as fairly_active_mins, 
 SUM(VeryActiveMinutes) as very_active_mins
-From daily_activity
+From daily_activity_sleep
 where total_time_in_bed IS NOT NULL
 Group by Id
 
