@@ -191,7 +191,40 @@ and the **data type** of each variable is depicted below:
 
 
 * Combination of **daily_activity** table and **sleep_day** table was done using **Python**. The final tables consists of 1397 rows and 413 rows respectively.
-* I'll be using these three tables for future analysis.
+* Also, **sleep_day** table was joined to **daily_activity** table on the basis of User Id, for future analysis.
+* The table is named as **daily_activity_sleep**
+  
+| **No.** |  **Variable**              |  **Description**                                        |
+|---------|----------------------------| --------------------------------------------------------|
+| 1       | Id                         | Unique ID assigned to each user                         |
+| 2       | ActivityDate               | Date of the Log                                         |
+| 3       | Day_of_week                | Day of the Log                                          |
+| 4       | TotalSteps                 | Total steps taken in a day                              |
+| 5       | TotalDistance              | Total distance in a day                                 |
+| 6       | TrackerDistance            | Total distance recorded in tracker                      |
+| 7       | LoggedActivitiesDistance   |                                                         |
+| 8       | VeryActiveDistance         | Distance covered while doing very active movements      |
+| 9       | ModeratelyActiveDistance   | Distance covered while doing moderate movements         |
+| 10      | LightActiveDistance        | Distance covered while doing light movements            |
+| 11      | SedentaryActiveDistance    | Distance covered while doing sedentary movements        |
+| 12      | VeryActiveMinutes          | Total time in a day involved in very active movements   |
+| 13      | FairlyActiveMinutes        | Total time in a day involved in fairly active movements |                            
+| 14      | LightlyActiveMinutes       | Total time in a day involved in lighth movements        | 
+| 15      | SedentaryMinutes           | Total time in a day involved in vsedentary movements    |
+| 16      | Total_active_mins          | Total time of activity in  mins                         |
+| 17      | Total_active_hours         | Total time of activity in  hours                        |
+| 18      | Calories                   | Calories burned in a day                                |
+| 19      | SleepDay                   | Date of the Log                                         |
+| 20      | Sleep_time                 | Time of the Log                                         |
+| 21      | Day_of_week                | Name of the day                                         |
+| 22      | TotalSleepRecords          | Totalno.of logs                                         |
+| 23      | TotalMinutesAsleepy        | Total mins of sleep                                     |
+| 24      | TotalTimeInBed             | Total mins lying on bed                                 |
+| 25      | AwakeInBedTime             | Total mins awake in bed                                 |
+| 26      | total_sleep_hr             | Total hours of sleep                                    |
+| 27      | total_timeinbed_hr         | Total hours in bed                                      |
+
+* I'll be using these **4 tables** for future analysis.
 
 ### 4. Analyze
 #### Data Analysis
