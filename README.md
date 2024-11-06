@@ -36,7 +36,7 @@ This Kaggle dataset presents personal data from thirty users of Fitbit. Thirty s
 ### 3. Process
 The basis for this analysis is **12-03-2016 to 12-05-2016** data and the steps for processing the data are as follow:
 1) [Data Pre-processing](https://github.com/sangeetbanik/BellaBeat_Analysis_Project/blob/main/Data_Preprocessing.md)
-2) [Data cleaning and combination]()
+2) [Data cleaning and combination](https://github.com/sangeetbanik/BellaBeat_Analysis_Project/blob/main/Data_Cleaning_and_Combination.md)
 3) [Exploratory_Data Analysis]()
 
 * The "Id" column indicates the number of unique users represented in the dataset. There were 24 unique users who provided data for their 'daily_sleep' health metrics, 8 unique users for their 'weight_loginfo' health metrics, and 35 unique users for the remaining data. Given the very low sample size of 'weight_loginfo' data providers, I have decided to exclude this data frame from my analysis, as it does not contribute significant insights. Instead, I have utilized the **'daily_activity,' 'hourly_calories,' 'hourly_intensities,' 'hourly_steps,' data tables for my analysis, all of which include inputs from 35 unique users, and 'sleep_day' table, which contain 24 unique users**.
